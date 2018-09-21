@@ -1,0 +1,5 @@
+com/thuan/GatewayApplication.class
+com/thuan/filters/ErrorFilter.class
+com/thuan/filters/PostFilter.class
+com/thuan/filters/SimpleFilter.class
+com/thuan/filters/RouteFilter.class

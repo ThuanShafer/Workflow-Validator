@@ -1,0 +1,6 @@
+zuul:
+  routes:
+    student-service:
+      path: /students/**
+      serviceId: student-service
+      strip-prefix: false
