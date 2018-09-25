@@ -1,0 +1,20 @@
+import com.region.validator.regionvalidatorservice.model.Region
+
+rule "Offer for South Asia"
+	when
+		regionObject: Region(type=="southasia")
+	then
+		regionObject.setDiscount("15");
+	end
+rule "Offer for North America"
+	when
+		regionObject: Region(type=="northamerica")
+	then
+		regionObject.setDiscount("25");
+	end
+rule "Offer for Europe"
+	when
+		regionObject: Region(type=="europe")
+	then
+		regionObject.setDiscount("20");
+	end

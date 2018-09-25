@@ -1,0 +1,20 @@
+import com.branch.validator.branchvalidatorservice.model.Branch
+
+rule "Offer for Colombo"
+	when
+		branchObject: Branch(type=="colombo")
+	then
+		branchObject.setDiscount("15");
+	end
+rule "Offer for Chennai"
+	when
+		branchObject: Branch(type=="sydney")
+	then
+		branchObject.setDiscount("25");
+	end
+rule "Offer for London"
+	when
+		branchObject: Branch(type=="london")
+	then
+		branchObject.setDiscount("20");
+	end

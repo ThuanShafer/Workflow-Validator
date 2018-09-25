@@ -1,0 +1,20 @@
+import com.country.validator.countryvalidatorservice.model.Country
+
+rule "Offer for Sri Lanka"
+	when
+		countryObject: Country(type=="srilanka")
+	then
+		countryObject.setDiscount("15");
+	end
+rule "Offer for India"
+	when
+		countryObject: Country(type=="australia")
+	then
+		countryObject.setDiscount("25");
+	end
+rule "Offer for UK"
+	when
+		countryObject: Country(type=="uk")
+	then
+		countryObject.setDiscount("20");
+	end

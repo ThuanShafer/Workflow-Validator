@@ -1,6 +1,14 @@
 zuul:
   routes:
-    student-service:
-      path: /students/**
-      serviceId: student-service
+    branch-validator-service:
+      path: /branches/**
+      serviceId: branch-validator-service
+      strip-prefix: false
+    region-validator-service:
+      path: /regions/**
+      serviceId: region-validator-service
+      strip-prefix: false
+    country-validator-service:
+      path: /countries/**
+      serviceId: country-validator-service
       strip-prefix: false
